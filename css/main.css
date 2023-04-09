@@ -4,19 +4,21 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #333; /* Черный цвет заголовков */
+  color: #333; 
 }
-
+.list-my{
+  font-size: 14px;
+}
 a {
-  color: #000; /* Черный цвет ссылок */
+  color: #000; 
   text-decoration: none;
-  border-radius: 20px 10px 5px 0;
+  border-radius: 10px;
 }
 
 a:hover {
   color: #fff; /* Белый цвет ссылок при наведении */
   background-color: #000; /* Черный фон при наведении */
-  border-radius: 20px 10px 5px 0;
+  border-radius: 10px;
 }
 
 .room-list li {
@@ -24,12 +26,12 @@ a:hover {
   border: 1px solid #ccc; /* Серая рамка для каждого элемента списка */
   margin-bottom: 10px;
   padding: 10px;
-  border-radius: 20px 10px 5px 0;
+  border-radius: 10px;
 }
 
 .room-list li:hover {
   background-color: #f2f2f2; /* Серый фон для элемента списка при наведении */
-  border-radius: 20px 10px 5px 0;
+  border-radius: 10px;
 }
 
 .room-list li img {
