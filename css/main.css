@@ -16,11 +16,6 @@ a {
   border-radius: 5px;
 }
 
-a:hover {
-  color: #fff; 
-  background-color: #000; 
-  border-radius: 5px;
-}
 .double-border-button {
          text-decoration: none;
          outline: none;
