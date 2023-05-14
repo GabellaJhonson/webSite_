@@ -1,0 +1,99 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    top: 10px;
+    right: 60px;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 0%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+/*.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 90%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}*/
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+</style>
+</head>
+<body style="text-align:center">
+	<link rel="stylesheet" href="css/regForm.css">
+ <link rel="stylesheet" href="css/main.css">
+<div><h1>ВХОД В АККАУНТ</h1></div>
+<form class="form" action="" method="post">
+  <input class="input" type="text" placeholder="Логин">
+  <input class="input" type="password" placeholder="Пароль">
+ <!--  <button class="btn" type="submit">Регистрация</button> -->
+ <div class="modal-window"> 
+  <div><a href="start_2.html" class="floating-button">Вход</a></div>
+ <div class="modal-window-links"><a href="register.html" class="dotted-link">Регистрация</a> 
+  <span></span>
+  <a href="troll_password.html" class="dotted-link">Забыл пароль</a></div> </div>
+ 
+</form>
+
+<div class="popup" onclick="myFunction()">
+  <span class="popuptext" id="myPopup">Вы успешно зарегистрировались!</span>
+</div>
+
+<script>
+// When the user clicks on div, open the popup
+var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+function myFunction() {
+    popup.hidden = true;
+}
+    
+</script>
+
+</body>
+</html>
